@@ -7,6 +7,16 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
+
+    <Button
+    android:id="@+id/telegram_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="انتقل إلى Telegram"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:onClick="openTelegram"/>
+
     <Button
         android:id="@+id/camera_switch"
         android:layout_width="wrap_content"
