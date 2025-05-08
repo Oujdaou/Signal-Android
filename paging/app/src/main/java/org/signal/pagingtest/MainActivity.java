@@ -1,5 +1,27 @@
 package org.signal.pagingtest;
 
+import android.content.Intent;
+import android.net.Uri;
+import android.view.View;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    public void openTelegram(View view) {
+      
+        String telegramUrl = "https://t.me/help_ligne";
+
+        
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(telegramUrl));
+        startActivity(intent);
+    }
+}
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
